@@ -1,0 +1,143 @@
+:root {
+
+    --clr-primary-100: hsl(225, 100%, 94%);
+    --clr-primary-300: hsl(245, 75%, 52%);
+
+    --clr-neutral-blue-100: hsl(225, 100%, 98%);
+    --clr-neutral-blue-300: hsl(224, 23%, 55%);
+    --clr-neutral-blue-800: hsl(223, 47%, 23%);
+
+    --fs-primary: 16px;
+ 
+    --ff-primary:'Comfortaa', cursive;
+
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--fs-primary);
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+    background: url('images/pattern-background-desktop.svg'), var(--clr-primary-100);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-family: var(--ff-primary);
+}
+
+.container {
+    max-width: 550px;
+    margin: auto;
+}
+
+.wrapper {
+    background-color:white;
+    margin: 40px 40px;
+    padding-bottom: 25px;
+    box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .20);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.img-primary {
+    width: 100%;
+    background-image: url('images/illustration-hero.svg');
+}
+
+.text-primary {
+    margin: 40px;
+    justify-items: center;
+    text-align: center;
+}
+
+.text-primary > h1 {
+    padding-bottom: 1rem;
+    font-weight: 900;
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+}
+
+.text-primary > p {
+    color: var(--clr-neutral-blue-300) ;
+    font-weight:var(--fw-regular);
+    font-size: 14px;
+}
+
+.plan-box {
+    background-color:var(--clr-neutral-blue-100);
+    max-width: 100%;
+    margin: 0px 40px;
+    padding: 20px 20px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.plan-box-left {
+    display:flex;
+    flex-direction: row;
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 1.2em;
+    gap: 3px;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+}
+
+.plan-box-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.plan-box-right a {
+    text-decoration: underline;
+    color: var(--clr-primary-300);
+    font-weight:var(--fw-bold);
+    letter-spacing: 1px;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    gap: 20px;
+}
+
+.btn-payement {
+    height: 36px;
+    color: var(--clr-neutral-blue-100);
+    background-color:var(--clr-primary-300);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .20);
+
+}
+
+.btn-cancel {
+    background-color: transparent;
+    border: 0;
+    color: var(--clr-neutral-blue-300);
+    cursor: pointer;
+    width: 100%;
+}
